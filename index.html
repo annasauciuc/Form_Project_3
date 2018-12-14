@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Merriweather">
+    <title>Online Registration Form</title>
+</head>
+
+<body>
+    <div class="first_line">
+        <h1>THE CODE REVIEW</h1>
+    </div>
+    <div class="wrapper">
+        <header class="line_2">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox </p>
+        </header>
+        <form action="post" method="post">
+            <div class="row">
+                <div class="col_1">
+                    <fieldset>
+                        <legend class="contact">Contact Information</legend>
+                        <div class="line">
+                            <label for="full_name">Full Name </label>
+                            <input type="text" name="full_name" value="" id="full_name" autocomplete="off" autofocus placeholder="Required" required>
+                        </div>
+                        <div class="line">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" value="" id="email" autocomplete="off" placeholder="Required" required>
+                        </div>
+                        <div class="line">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" name="phone_number" value="" autocomplete="off" id="phone_number">
+                        </div>
+                        <div class="line">
+                            <label for="address">Street Address</label>
+                            <input type="text" name="address" value="" autocomplete="off" id="address">
+                        </div>
+                        <div class="line">
+                            <label for="city">City</label>
+                            <input type="text" name="city" autocomplete="off" value="" id="city">
+                        </div>
+                        <div class="line">
+                            <label for="state">State</label>
+                            <select name="user_state" id="state">
+                                <optgroup label="East_europe">
+                                    <option disabled="disabled" selected="selected">Choose State</option>
+                                    <option value="russia">Russia</option>
+                                    <option value="romania">Romania</option>
+                                    <option value="latvia">Latvia</option>
+                                    <option value="ukraina">Ukraine</option>
+                                    <option value="estonia">Estonia</option>
+                                    <option value="lituania">Lituania</option>
+                                </optgroup>
+                                <optgroup label="Western Europe">
+                                    <option value="france">France</option>
+                                    <option value="belgium">Belgium</option>
+                                    <option value="luxemburg">Luxemburg</option>
+                                    <option value="ireland">Ireland</option>
+                                    <option value="united kingdom">United Kingdom</option>
+                                </optgroup>
+                                <optgroup label="Southwestern Europe">
+                                    <option value="spain">Spain</option>
+                                    <option value="portugal">Portugal</option>
+                                    <option value="andorra">Andorra</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="line">
+                            <label for="zip_code">Zip Code</label>
+                            <input type="text" name="zip_code" id="zip_code">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col_2">
+                    <fieldset>
+                        <legend class="second">Newsletter</legend>
+                        <p>Select the newsletters you would like to recive:</p>
+                        <div>
+                            <br>
+                            <label for="html_news">
+                                <input type="checkbox" name="news" id="html_news">HTML News</label>
+                        </div>
+                        <div>
+                            <label for="css_news">
+                                <input type="checkbox" name="news" id="css_news">CSS News</label>
+                        </div>
+                        <div>
+                            <label for="javascript_news">
+                                <input type="checkbox" name="news" id="javascript_news">Javascript News</label>
+                        </div>
+                        <br>
+                        <h4 class="thirth_leg">Newsletter format</h4>
+                        <div>
+                            <label for="html">
+                                <input type="radio" value="html" name="newsletter" id="html">Html</label>
+                        </div>
+                        <div>
+                            <label for="plain_text">
+                                <input type="radio" value="html" name="newsletter" id="plain_text">Plain text</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="text_area" class="last_label">Other topics you`d like to hear about </label>
+                            <textarea name="textarea" id="text_area" placeholder="Write your message here"></textarea>
+                        </div>
+                        <div>
+                            <label for="ref_source" class="instructions last_label">How did you hear about our site?</label>
+                            <select id="ref_source" class="dropdown " name="user_ref_source">
+                                <option disabled="disabled" selected="selected">Choose One</option>
+                                <option value="search_eng">Search Engine</option>
+                                <option value="word_mouth">Word of Mouth</option>
+                                <option value="blog">Blog</option>
+                                <option value="social_media">Social Media</option>
+                                <option value="none_above">None of the Above</option>
+                            </select>
+                        </div>
+                        <div class="btn">
+                            <button type="submit" class="signupbtn" id="sign_up">Sign Up</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+        <footer>
+            <p>
+                <em> Copyright The Code Review</em>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
